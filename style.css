@@ -1,0 +1,18 @@
+h1{
+    font-family: Dancing Script;
+    font-size: 42px;
+    margin: 2px;
+}
+nav{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    position: sticky;
+}
+nav a img{
+    height:auto;
+    width: 25px;
+}
