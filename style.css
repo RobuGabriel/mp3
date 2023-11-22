@@ -1,8 +1,16 @@
-h1{
+body {
+    margin: 0;
+    display: block;
+    width: 100vw;
+
+}
+
+h1 {
     font-family: Dancing Script;
     font-size: 32px;
     margin: 2px;
 }
+
 nav {
     background-color: white;
     display: flex;
@@ -16,28 +24,35 @@ nav {
     align-items: center;
     margin: 0;
     height: 8vh;
-    z-index: 100;
+    z-index: 10000;
+    background-color: rgba(255, 255, 255, 0.6);
+
 }
 
 
-nav a img{
-    height:auto;
+nav a img {
+    height: auto;
     width: 25px;
 }
-header{
+
+header {
     margin: 0;
     padding: 0;
 }
-.hero{
+
+.hero {
     text-align: center;
-    font-family :Montserrat; 
+    font-family: Montserrat;
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
-body{
+
+body {
     font-family: Montserrat;
 }
-.dark-overlay{
+
+.dark-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,133 +60,251 @@ body{
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.bkg{
+
+.bkg {
 
     object-fit: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     height: 80vh;
 
 }
-.bkg2{
+
+.bkg2 {
     display: flex;
-    justify-content:space-around ;
+    justify-content: space-around;
 }
-h3{
-   font-weight: 400;
-   top: 40%;
-   position: absolute;
-   font-size:25px;
-   z-index: 100;
-   margin: 0;
-   color: white;
+
+h3 {
+    font-weight: 400;
+    top: 40%;
+    position: absolute;
+    font-size: 3.2vw;
+    z-index: 100;
+    margin: 0;
+    color: white;
 
 
 }
-h2{
+
+h2 {
+    font-size: 2.5vw;
     text-align: center;
     font-weight: bold;
     margin-top: 30px;
 }
-.bt{
+
+.hero p {
+    font-size: 2vw;
+}
+
+.bt {
     position: absolute;
     border: 2px solid;
     background-color: transparent;
     border-radius: 0%;
     cursor: pointer;
-    border-color:white;
+    border-color: white;
     color: white;
     padding: 10px 15px;
-    font-size: large;
+    font-size: 1.5vw;
     font-weight: 400;
     top: 50%;
     transition: background-color 0.3s, box-shadow 0.3s;
     z-index: 100;
+    margin-top: 3vh;
 }
-.bt:hover{
-    background-color:rgba(255, 255, 255, 0.2);
+
+.bt:hover {
+    background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
     filter: blur(0.3px);
 }
-.half-section {
-    display: flex;
+
+.catalog {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
     width: 100%;
+    margin-bottom: 10vh;
+}
+
+.dark-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the alpha value for darkness */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .half {
-    flex: 1;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 20px;
-    align-items: center;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+
 }
 
 .half img {
-    width: 100%;
-    display: block;
-    margin: 0; /* Remove default margin */
-}
-.half img:hover
+    width: 25vw;
 
-.button-container {
-    position: absolute;
-    
 }
-button{
+
+
+.half h5 {
+    margin: 0;
+}
+
+.half .button-container {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.half button {
+    margin-top: 30px;
     border: 2px solid;
     background-color: transparent;
     border-radius: 0%;
     cursor: pointer;
-    border-color:white;
+    border-color: white;
     color: white;
     padding: 10px 15px;
-    font-size: large;
+    font-size: 1.2vw;
     font-weight: 400;
     top: 100%;
     transition: background-color 0.3s, box-shadow 0.3s;
-    z-index: 100;
 }
-button:hover{
-    background-color:rgba(255, 255, 255, 0.2);
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
     filter: blur(0.3px);
 }
 
-@media screen and (max-width: 600px) {
-    /* On mobile screens, display images in a column */
-    .half-section {
-        flex-direction: column;
-    }
-}
-h5{
-    font-size: 25px;
-    margin: 20px;
+h5 {
+    font-size: 1.7vw;
     font-weight: 700;
     color: white;
-    
-}
-footer{
-    display: flex ;
-    justify-content: space-between;
-   background-color: lightgray;
 
 }
-footer p{
-    font-weight: bold;
-    font-size: 15px;
+
+.caut h5 {
+
+    margin: 0;
+    color: black;
+
 }
-footer ul{
+
+.caut p {
+    font-size: 1.3vw;
+}
+
+.caut {
+    position: relative;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat";
+    width: 100vw;
+    margin-bottom: 10vh;
+    margin: 0;
+}
+
+.harta iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.harta {
+    overflow: hidden;
+    height: 30vh;
+    width: 30vw;
+    margin: 0;
+}
+
+.text {
+    position: relative;
+}
+
+.text h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+footer ul {
     padding-left: 5%;
     padding-right: 5%;
 }
-footer li{
-    font-size: 10px; 
+
+footer li {
+    font-size: 1vw;
     list-style: none;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .catalog {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .half img {
+        width: 100vw;
+    }
+
+    .half {
+        height: 50vw;
+        overflow: hidden;
+    }
+
+    .caut {
+        flex-direction: column;
+    }
+
+
+
+    .harta {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .half button {
+        font-size: 5vw;
+
+    }
+
+    .half h5 {
+        font-size: 6vw;
+    }
 }
